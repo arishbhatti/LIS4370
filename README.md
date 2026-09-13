@@ -1,30 +1,6 @@
 # LIS4370
 Module # 2 Assignment Importing Data and Function Evaluation in R:
 https://rprogrammingjournal167.blogspot.com/2026/09/assignment-importing-data-and-function.html
-
-Initial Function + Error:
-
-assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
-
-myMean <- function(assignment2) {
-
-  return(sum(assignment) / length(someData))
-
-}
-
-myMean(assignment2)
-
-Error in myMean(assignment2) : object 'assignment' not found
-Error in myMean(assignment2) : object 'someData' not found
-
-Fixed Function:
-
-assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
-myMean <- function(assignment2) {
-
-  return(sum(assignment2) / length(assignment2))
-
-}
 ----------------------------------------------------------------------------------------------------
 
 Assignment #3: Analyzing 2016 data “Poll” Data in R:
