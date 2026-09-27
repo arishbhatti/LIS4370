@@ -12,3 +12,7 @@ Assignment #4: Visualizing and Interpreting Hospital Patient Data:
 https://rprogrammingjournal167.blogspot.com/2026/09/visualizing-and-interpreting-hospital.html
 ----------------------------------------------------------------------------------------------------
 
+Assignment #5: Matrix Algebra in R:
+https://rprogrammingjournal167.blogspot.com/2026/09/assignment-5-matrix-algebra-in-r-4370.html
+----------------------------------------------------------------------------------------------------
+
