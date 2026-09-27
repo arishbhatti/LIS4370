@@ -53,7 +53,7 @@ ggplot(df_polls, aes(x = Name, y = Diff)) +
   )
 ------------------------------------------------------------------------------------------
 
-Assignment #4: Visualizing and Interpreting Hospital Patient Data
+Assignment #4: Visualizing and Interpreting Hospital Patient Data:
 
 Frequency     <- c(0.6, 0.3, 0.4, 0.4, 0.2, 0.6, 0.3, 0.4, 0.9, 0.2)
 BloodPressure <- c(103, 87, 32, 42, 59, 109, 78, 205, 135, 176)
@@ -107,3 +107,33 @@ hist(
   main = "Histogram of Blood Pressure"
 )
 ------------------------------------------------------------------------------------------
+
+Assignment #5: Matrix Algebra in R
+
+Code:
+A <- matrix(1:100,  nrow = 10)
+B <- matrix(1:1000, nrow = 10)
+
+dim(A)  # should be 10 × 10
+dim(B)  # 10 × 100 — not square
+
+# For A
+invA <- solve(A)
+detA <- det(A)
+
+# For B, use tryCatch to capture errors
+invB <- tryCatch(solve(B), error = function(e) e)
+detB <- tryCatch(det(B),   error = function(e) e)
+
+Errors:
+> invA <- solve(A)
+Error in solve.default(A) : 
+  Lapack routine dgesv: system is exactly singular: U[6,6] = 0
+> invB
+<simpleError in solve.default(B): 'a' (10 x 100) must be square>
+> detB
+<simpleError in determinant.matrix(x, logarithm = TRUE, ...): 'x' must be a square matrix>
+------------------------------------------------------------------------------------------
+
+
+
