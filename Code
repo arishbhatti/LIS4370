@@ -135,5 +135,37 @@ Error in solve.default(A) :
 <simpleError in determinant.matrix(x, logarithm = TRUE, ...): 'x' must be a square matrix>
 ------------------------------------------------------------------------------------------
 
+Assignment #6: Matrix Operations and Construction (4370):
+
+#In R, define:
+A <- matrix(c(2, 0, 1, 3), ncol = 2)
+B <- matrix(c(5, 2, 4, -1), ncol = 2)
+
+#Compute A + B and display the result.
+A+B
+
+#Compute A - B and display the result.
+A-B
+
+#Use diag() to build a 4 × 4 matrix with diagonal entries 4, 1, 2, 3:
+D <- diag(c(4, 1, 2, 3))
+D
+
+#Construct a Custom 5 × 5 Matrix
+New <- diag(3,5,5)
+New[1,] <- c(3,1,1,1,1)
+New[,1] <- c(3,2,2,2,2)
+New
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
