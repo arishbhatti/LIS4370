@@ -16,3 +16,5 @@ Assignment #5: Matrix Algebra in R:
 https://rprogrammingjournal167.blogspot.com/2026/09/assignment-5-matrix-algebra-in-r-4370.html
 ----------------------------------------------------------------------------------------------------
 
+Assignment #6: Matrix Operations and Construction (4370):
+https://rprogrammingjournal167.blogspot.com/2026/10/assignment-6-matrix-operations-and.html
