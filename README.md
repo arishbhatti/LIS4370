@@ -19,3 +19,8 @@ https://rprogrammingjournal167.blogspot.com/2026/09/assignment-5-matrix-algebra-
 Assignment #6: Matrix Operations and Construction (4370):
 https://rprogrammingjournal167.blogspot.com/2026/10/assignment-6-matrix-operations-and.html
 ----------------------------------------------------------------------------------------------------
+
+Assignment #7: Exploring R’s Object Oriented Systems (S3 &amp; S4):
+https://rprogrammingjournal167.blogspot.com/2026/10/assignment-7-exploring-rs.html
+----------------------------------------------------------------------------------------------------
+
