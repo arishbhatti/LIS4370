@@ -158,7 +158,32 @@ New[,1] <- c(3,2,2,2,2)
 New
 ------------------------------------------------------------------------------------------
 
+Assignment #7: Exploring R’s Object Oriented Systems (S3 & S4):
 
+data(mtcars)
+
+head(mtcars)
+str(mtcars)
+
+print(mtcars)
+
+s3_obj <- list(name = "Arish", birthday = "6/4/2004", age = 22)
+class(s3_obj) <- "birthday_s3"
+
+print.birthday_s3 <- function(x, ...) {
+  cat("I turned", x$age, "this year!")
+}
+
+print(s3_obj)
+
+setClass("birthday_s4",
+         slots = c(name = "character", birthday = "character", age = "numeric")
+)
+
+s4_obj <- new("birthday_s4", name = "Arish", birthday = "6/4/2004", age = 22)
+
+print(s4_obj)
+------------------------------------------------------------------------------------------
 
 
 
