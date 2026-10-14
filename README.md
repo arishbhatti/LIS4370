@@ -24,3 +24,6 @@ Assignment #7: Exploring R’s Object Oriented Systems (S3 &amp; S4):
 https://rprogrammingjournal167.blogspot.com/2026/10/assignment-7-exploring-rs.html
 ----------------------------------------------------------------------------------------------------
 
+Assignment #8: Input/Output, String Manipulation, and the plyr Package (4370):
+https://rprogrammingjournal167.blogspot.com/2026/10/read.html
+----------------------------------------------------------------------------------------------------
