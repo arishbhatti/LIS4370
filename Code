@@ -185,7 +185,48 @@ s4_obj <- new("birthday_s4", name = "Arish", birthday = "6/4/2004", age = 22)
 print(s4_obj)
 ------------------------------------------------------------------------------------------
 
+Assignment #8: Input/Output, String Manipulation, and the plyr Package (4370):
 
+student6 <- read.csv(file.choose(), header = TRUE, stringsAsFactors = FALSE)
+
+library(plyr)
+
+gender_mean <- ddply(
+  student6,
+  "Sex",
+  summarise,
+  GradeAverage = mean(Grade, na.rm = TRUE)
+)
+
+write.table(
+  gender_mean,
+  file = "gender_mean.txt",
+  sep  = "\t",
+  row.names = FALSE
+)
+
+i_students <- subset(
+  student6,
+  grepl("i", Name, ignore.case = TRUE)
+)
+
+write.csv(
+  i_students$Name,
+  file      = "i_students.csv",
+  row.names = FALSE,
+  quote     = FALSE
+)
+
+write.csv(
+  i_students,
+  file      = "i_students_full.csv",
+  row.names = FALSE
+)
+
+file.exists("gender_mean.txt")
+file.exists("i_students.csv")
+file.exists("i_students_full.csv")
+------------------------------------------------------------------------------------------
 
 
 
