@@ -227,6 +227,51 @@ file.exists("gender_mean.txt")
 file.exists("i_students.csv")
 file.exists("i_students_full.csv")
 ------------------------------------------------------------------------------------------
+Assignment #9: Visualization in R – Base Graphics, Lattice, and ggplot2:
+
+data("mtcars", package = "datasets")
+head(mtcars)
+
+plot(mtcars$wt, mtcars$mpg,
+     main = "Base: Weight vs. MPG",
+     xlab = "Weight (per 1000 lbs)",
+     ylab = "MPG (Miles per Gallon)"
+     )
+
+mtcars$brand <- sub(" .*", "", rownames(mtcars))
+avg_mpg <- aggregate(mpg ~ brand, data = mtcars, mean)
+
+barplot(avg_mpg$mpg,
+        names.arg = avg_mpg$brand,
+        main = "Base: MPG by Car Brand",
+        xlab = "Car Brand",
+        ylab = "MPG (Miles per Gallon)",
+        las = 2
+        )
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+library(lattice)
+
+xyplot(mpg ~ wt,
+       data = mtcars,
+       main = "Lattice: Weight vs. MPG",
+       xlab = "Weight (per 1000 lbs)",
+       ylab = "MPG (Miles per Gallon)"
+       )
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg))+
+  geom_point()+
+  geom_smooth(method = "lm")+
+  labs(
+    title = "ggplot2: Weight vs. MPG",
+    x = "Weight (per 1000 lbs)",
+    y = "MPG (Miles per Gallon)"
+  ) +
+theme(plot.title = element_text(hjust = 0.5))
+------------------------------------------------------------------------------------------
 
 
 
