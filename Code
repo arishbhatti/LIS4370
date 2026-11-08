@@ -227,6 +227,7 @@ file.exists("gender_mean.txt")
 file.exists("i_students.csv")
 file.exists("i_students_full.csv")
 ------------------------------------------------------------------------------------------
+
 Assignment #9: Visualization in R – Base Graphics, Lattice, and ggplot2:
 
 data("mtcars", package = "datasets")
@@ -271,6 +272,34 @@ ggplot(mtcars, aes(x = wt, y = mpg))+
     y = "MPG (Miles per Gallon)"
   ) +
 theme(plot.title = element_text(hjust = 0.5))
+------------------------------------------------------------------------------------------
+
+Assignment #11: Debugging and Defensive Programming in R (4370):
+
+tukey.outlier <- function(x) {
+  Q1 <- quantile(x, 0.25)
+  Q3 <- quantile(x, 0.75)
+  IQR_val <- IQR(x)
+  
+  lower_fence <- Q1 - 1.5 * IQR_val
+  upper_fence <- Q3 + 1.5 * IQR_val
+  
+  x < lower_fence | x > upper_fence
+}
+
+corrected_tukey <- function(x) {
+  outliers <- array(TRUE, dim = dim(x))
+  for (j in seq_len(ncol(x))) {
+    outliers[, j] <- outliers[, j] & tukey.outlier(x[, j])
+  }
+  outlier.vec <- logical(nrow(x))
+  for (i in seq_len(nrow(x))) {
+    outlier.vec[i] <- all(outliers[i, ])
+  }
+  outlier.vec
+}
+
+corrected_tukey(test_mat)
 ------------------------------------------------------------------------------------------
 
 
