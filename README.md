@@ -27,7 +27,13 @@ https://rprogrammingjournal167.blogspot.com/2026/10/assignment-7-exploring-rs.ht
 Assignment #8: Input/Output, String Manipulation, and the plyr Package (4370):
 https://rprogrammingjournal167.blogspot.com/2026/10/read.html
 ----------------------------------------------------------------------------------------------------
+
 Assignment #9: Visualization in R – Base Graphics, Lattice, and ggplot2 (4370):
 https://rprogrammingjournal167.blogspot.com/2026/10/assignment-9-visualization-in-r-base.html
 ----------------------------------------------------------------------------------------------------
+
+Assignment #11: Debugging and Defensive Programming in R (4370):
+https://rprogrammingjournal167.blogspot.com/2026/11/assignment-11-debugging-and-defensive.html
+----------------------------------------------------------------------------------------------------
+
 
