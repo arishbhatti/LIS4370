@@ -1,0 +1,53 @@
+---
+title: "My R Markdown Primer"
+author: "Arish Bhatti"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown Introduction
+
+R markdown is a great way of producing a document which has both code and writing in it. Within R markdown you 
+can write comments to the reader while creating executable code chunks all in the same space. This file
+format seems great for reporting and commenting on code you want to show to a viewer.
+
+## Narrative Paragraph
+
+I have a decent amount of experience of with R markdown already, as I use it for all my assignments in my other class LIS 4761.
+I find it to be an efficient way to code while reporting on my analysis finding so I think it's a great format to showcase findings.
+
+## LaTeX Math Expression
+
+This is the formula for calculating the area of a circle: $A = \pi r^2$.
+
+$$E = mc^2$$
+## Executable R code chunks
+```{r Summary Stats}
+head(mtcars)
+str(mtcars)
+summary(mtcars)
+```
+
+```{r mtcars Plot}
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg))+
+  geom_point() +
+  labs(title = "Weight vs. MPG",
+  x = "Weight (per 1000 lbs)",
+  y = "Miles per Gallon"
+  )
+```
+
+## Concluding Reflection
+
+In conclusion, I find R markdown to be a fantastic reporting tool for those who want to conduct analysis and explain their findings.
+I find it to have a very organized and easy to understand structure, making it a great way of communicating findings to a broad audience.
+One R markdown aspect I particularly enjoyed was its swappable view option from "source" to "visual", and I use this feature often when doing assignments in my other class. In comparison to plain reports on MS word or any other application, I definitely prefer R markdown since it makes
+embedding code and placing commentary so easy.
+
+
